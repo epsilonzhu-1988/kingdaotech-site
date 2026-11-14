@@ -1,0 +1,5 @@
+dist/
+dist.zip
+*.py
+*.log
+*.bak
