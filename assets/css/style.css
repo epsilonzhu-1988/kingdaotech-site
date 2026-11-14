@@ -245,3 +245,15 @@ footer .slogan{color:#3DCE74}
 .img-grid figcaption b{color:var(--navy);font-size:13.5px}
 @media(max-width:900px){.img-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.img-grid{grid-template-columns:1fr}}
+
+
+/* project photo grid */
+.proj-photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:8px}
+.proj-photos figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.proj-photos img{width:100%;height:250px;object-fit:cover;display:block}
+.proj-photos figcaption{padding:16px 18px 18px;font-size:13.5px;line-height:1.6;color:var(--muted)}
+.proj-photos figcaption b{display:block;color:var(--navy);font-size:14.5px;margin-bottom:5px}
+.kv-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.kv-row .kv{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.kv-row .kv b{display:block;color:var(--navy);font-size:14.5px;margin-bottom:6px}
+.kv-row .kv span{font-size:13.5px;color:var(--muted);line-height:1.55}
