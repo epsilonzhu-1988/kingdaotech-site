@@ -17,6 +17,9 @@ git add -A
 git -c user.email="rongtao@kingdaotech.com" -c user.name="KINGDAO" commit -q -m "$MSG"
 echo "  $(git log --oneline -1)"
 
+echo "▶ 同步远程（GitHub 会自动加 CNAME 等文件）…"
+git -c user.email="rongtao@kingdaotech.com" -c user.name="KINGDAO" pull --rebase origin main 2>&1 | tail -2 || true
+
 echo "▶ 推送…"
 git push origin main 2>&1 | tail -3
 
