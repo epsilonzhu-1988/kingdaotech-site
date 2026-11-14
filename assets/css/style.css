@@ -270,3 +270,10 @@ footer .slogan{color:#3DCE74}
   background:#f6f8f9;border-radius:9px;margin-bottom:14px;display:block}
 .prod:hover .pimg{filter:brightness(1.03)}
 @media(max-width:640px){.prod .pimg{height:150px}}
+
+
+/* 提高产品卡描述对比度 */
+.prod p{color:#5b6b74}
+.prod:hover{transform:translateY(-2px);transition:transform .18s ease}
+.prod .pimg{transition:transform .3s ease}
+.prod:hover .pimg{transform:scale(1.03)}
