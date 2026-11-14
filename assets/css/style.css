@@ -263,3 +263,10 @@ footer .slogan{color:#3DCE74}
 .kv-row .kv{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px}
 .kv-row .kv b{display:block;color:var(--navy);font-size:14.5px;margin-bottom:6px}
 .kv-row .kv span{font-size:13.5px;color:var(--muted);line-height:1.55}
+
+
+/* home product photo cards */
+.prod .pimg{width:100%;height:172px;object-fit:cover;object-position:center;
+  background:#f6f8f9;border-radius:9px;margin-bottom:14px;display:block}
+.prod:hover .pimg{filter:brightness(1.03)}
+@media(max-width:640px){.prod .pimg{height:150px}}
