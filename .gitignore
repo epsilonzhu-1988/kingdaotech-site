@@ -6,3 +6,6 @@ dist.zip
 _src_njlshb/
 _doubao_win*.png
 _*.py
+_offline_pages/
+dist/
+dist.zip
