@@ -3,3 +3,6 @@ dist.zip
 *.py
 *.log
 *.bak
+_src_njlshb/
+_doubao_win*.png
+_*.py
