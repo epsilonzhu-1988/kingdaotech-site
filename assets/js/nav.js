@@ -109,6 +109,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+
+  /* ---------- 4. 产品图框型自适应：竖长图用 3:4 竖框，避免两侧留白 ---------- */
+  function fitFrames() {
+    document.querySelectorAll('.img-grid figure').forEach(function (fig) {
+      var img = fig.querySelector('img');
+      if (!img || !img.naturalWidth) return;
+      var ar = img.naturalWidth / img.naturalHeight;
+      fig.classList.toggle('img-tall', ar < 0.85);
+    });
+  }
+  document.querySelectorAll('.img-grid img').forEach(function (img) {
+    if (img.complete) return;
+    img.addEventListener('load', fitFrames, { once: true });
+  });
+  fitFrames();
+  window.addEventListener('load', fitFrames);
+
   /* ---------- 3. 卡片点击兜底 ---------- */
   document.querySelectorAll('a.proj, a.prod, a.sol').forEach(function (card) {
     card.style.cursor = 'pointer';
