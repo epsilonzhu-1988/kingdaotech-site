@@ -244,12 +244,12 @@ footer .slogan{color:#3DCE74}
 /* brand-green */
 
 /* 产品图片网格 */
-.img-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.img-grid figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.img-grid{display:block;column-count:2;column-gap:26px}
+.img-grid figure{margin:0 0 26px;break-inside:avoid;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .img-grid img{width:100%;height:100%;object-fit:contain;background:#fff;display:block;padding:6px}
 .img-grid figure{aspect-ratio:4/3}
 .img-grid figure.img-tall{aspect-ratio:3/4}
-.img-grid{align-items:start}
+
 /* 竖长设备（泵/格栅）用 3:4 竖框，避免被压成一条 */
 /* 右侧堆叠特写：等比填满左图高度 */
 .img-grid figure.img-natural{max-width:380px;margin:0 auto}
@@ -259,8 +259,8 @@ footer .slogan{color:#3DCE74}
 .img-stack img{flex:1;min-height:0;height:100%;aspect-ratio:auto;object-fit:cover}
 .img-grid figcaption{padding:10px 12px 14px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line)}
 .img-grid figcaption b{color:var(--navy);font-size:13.5px}
-@media(max-width:900px){.img-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.img-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.img-grid{column-count:1}}
+@media(max-width:520px){.img-grid{column-count:1}}
 
 
 /* project photo grid */
