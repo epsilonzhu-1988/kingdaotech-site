@@ -277,3 +277,7 @@ footer .slogan{color:#3DCE74}
 .prod:hover{transform:translateY(-2px);transition:transform .18s ease}
 .prod .pimg{transition:transform .3s ease}
 .prod:hover .pimg{transform:scale(1.03)}
+
+/* 单图 section：避免一张小图撑在整行里、两侧大片留白（2026-11-16） */
+.img-grid figure:only-child { max-width: 680px; margin: 0 auto; }
+.img-grid figure:only-child img { max-height: 460px; object-fit: contain; }
