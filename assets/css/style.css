@@ -270,7 +270,7 @@ footer .slogan{color:#3DCE74}
 .proj-photos.renders img{height:auto;aspect-ratio:16/10;object-fit:cover}
 .proj-photos figcaption{padding:16px 18px 18px;font-size:13.5px;line-height:1.6;color:var(--muted)}
 .proj-photos figcaption b{display:block;color:var(--navy);font-size:14.5px;margin-bottom:5px}
-.kv-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.kv-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(186px,1fr));gap:16px}
 .kv-row .kv{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 20px}
 .kv-row .kv b{display:block;color:var(--navy);font-size:14.5px;margin-bottom:6px}
 .kv-row .kv span{font-size:13.5px;color:var(--muted);line-height:1.55}
