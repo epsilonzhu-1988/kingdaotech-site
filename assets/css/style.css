@@ -290,3 +290,42 @@ footer .slogan{color:#3DCE74}
 /* 单图 section：避免一张小图撑在整行里、两侧大片留白（2026-11-16） */
 .img-grid figure:only-child { max-width: 680px; margin: 0 auto; }
 .img-grid figure:only-child img { max-height: 460px; object-fit: contain; }
+
+/* ---------- 导航下拉子菜单（2026-11-16） ---------- */
+.nav-item{position:relative;display:flex;align-items:center}
+.nav-item > a{display:inline-flex;align-items:center;gap:6px}
+.nav-item > a::after{content:"";width:5px;height:5px;border-right:1.6px solid currentColor;
+  border-bottom:1.6px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.55;transition:transform .18s}
+.nav-item:hover > a::after{transform:rotate(225deg) translateY(-2px)}
+.dropdown{position:absolute;top:calc(100% + 12px);left:-14px;z-index:80;background:#fff;
+  border:1px solid var(--line);border-radius:14px;box-shadow:0 20px 44px rgba(13,42,64,.14);
+  padding:12px 14px;opacity:0;visibility:hidden;transform:translateY(6px);
+  transition:opacity .18s ease, transform .18s ease, visibility .18s}
+.nav-item:hover .dropdown, .nav-item:focus-within .dropdown{opacity:1;visibility:visible;transform:none}
+.dropdown::before{content:"";position:absolute;top:-12px;left:0;right:0;height:12px}
+.dropdown a{display:block;padding:7px 9px;border-radius:8px;font-size:13.5px;font-weight:520;
+  color:#2A3B4D;line-height:1.32;white-space:nowrap}
+.dropdown a:hover{background:#EEF6F8;color:var(--teal)}
+.dropdown.mega{width:min(660px,calc(100vw - 48px));display:grid;grid-template-columns:1fr 1fr;gap:1px 18px}
+.dropdown.mega .mh{grid-column:1/-1;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);font-weight:700;margin:10px 0 3px;padding-left:9px}
+.dropdown.mega .mh:first-child{margin-top:0}
+.dropdown.types{width:300px;display:grid;grid-template-columns:1fr;gap:1px}
+.dropdown .all{grid-column:1/-1;margin-top:9px;padding-top:10px;border-top:1px solid var(--line);
+  border-radius:0;font-weight:650;color:var(--teal)}
+.dropdown .all:hover{background:none;color:var(--navy)}
+/* 锚点定位避开吸顶导航 */
+[id]{scroll-margin-top:92px}
+html{scroll-behavior:smooth}
+@media(max-width:900px){
+  .nav-item{display:block;width:100%}
+  .nav-item > a{width:100%}
+  .nav-item > a::after{margin-left:auto}
+  .dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;
+    border:0;padding:0 0 6px 14px;width:auto;display:none;background:none}
+  .nav-item.open .dropdown{display:block}
+  .dropdown.mega{width:auto;grid-template-columns:1fr}
+  .dropdown.mega .mh{grid-column:1/-1}
+  .dropdown a{white-space:normal;padding:9px 0;border-bottom:1px solid #F1F5F7}
+  .dropdown .all{border-top:0}
+}
