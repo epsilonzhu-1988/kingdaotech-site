@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!img || !img.naturalWidth) return;
       var ar = img.naturalWidth / img.naturalHeight;
       // 框型跟随图片比例（限幅 0.55~2.2，避免极端长条卡片）
-      var ar2 = Math.min(2.0, Math.max(0.85, ar));
+      var ar2 = Math.min(1.6, Math.max(1.0, ar));
       fig.style.aspectRatio = ar2.toFixed(3);
       fig.classList.toggle('img-tall', ar2 < 0.95);
     });
