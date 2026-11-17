@@ -71,7 +71,10 @@ section{padding:clamp(56px,7vw,88px) 0}
 .proj p{font-size:14px;color:var(--muted);margin-top:8px}
 
 /* products */
-.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prod-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:18px}
+.prod-grid>.prod{flex:0 1 calc((100% - 36px)/3);min-width:0}
+@media(max-width:900px){.prod-grid>.prod{flex:1 1 calc((100% - 18px)/2)}}
+@media(max-width:560px){.prod-grid>.prod{flex:1 1 100%}}
 .prod{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px 22px;transition:.2s}
 .prod:hover{border-color:#BFE6E4;box-shadow:0 10px 30px rgba(10,37,64,.07)}
 .prod .ico{width:42px;height:42px;border-radius:10px;background:#EAF6F5;display:grid;place-items:center;margin-bottom:14px}
