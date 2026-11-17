@@ -36,7 +36,7 @@ nav.links a:hover{color:var(--teal)}
 /* ---------- hero ---------- */
 .hero{position:relative;background:var(--navy);color:#fff;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;
-  background:url("images/plant_aerial.jpg") center/cover;opacity:.15;filter:saturate(.8)}
+  background:url("../../images/plant_aerial.jpg") center/cover;opacity:.15;filter:saturate(.8)}
 .hero::after{content:"";position:absolute;inset:0;
   background:linear-gradient(105deg,rgba(10,37,64,.96) 0%,rgba(10,37,64,.82) 45%,rgba(14,51,87,.55) 100%)}
 .hero .wrap{position:relative;z-index:2;padding:clamp(64px,9vw,104px) 24px clamp(56px,7vw,84px)}
