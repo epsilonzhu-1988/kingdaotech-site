@@ -247,7 +247,7 @@ footer .slogan{color:#3DCE74}
 .img-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;align-items:start}
 .img-grid figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .img-grid img{width:100%;flex:1;min-height:0;object-fit:contain;background:#fff;display:block;padding:10px}
-.img-grid figure{aspect-ratio:4/3;display:flex;flex-direction:column}
+.img-grid figure{aspect-ratio:1/1;display:flex;flex-direction:column}
 .img-grid figure.img-tall{aspect-ratio:3/4}
 
 /* 竖长设备（泵/格栅）用 3:4 竖框，避免被压成一条 */
