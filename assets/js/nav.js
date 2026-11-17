@@ -117,9 +117,8 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!img || !img.naturalWidth) return;
       var ar = img.naturalWidth / img.naturalHeight;
       // 框型跟随图片比例（限幅 0.55~2.2，避免极端长条卡片）
-      var ar2 = Math.min(1.6, Math.max(1.0, ar));
-      fig.style.aspectRatio = ar2.toFixed(3);
-      fig.classList.toggle('img-tall', ar2 < 0.95);
+      // 统一 4:3 卡框；竖长图用 img-tall 微调（3:4），其余保持 4:3
+      fig.classList.toggle('img-tall', ar < 0.85);
     });
   }
   document.querySelectorAll('.img-grid img').forEach(function (img) {
