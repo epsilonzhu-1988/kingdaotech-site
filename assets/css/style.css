@@ -331,3 +331,10 @@ html{scroll-behavior:smooth}
   .dropdown a{white-space:normal;padding:9px 0;border-bottom:1px solid #F1F5F7}
   .dropdown .all{border-top:0}
 }
+
+/* 5 张图：3 上 2 下居中，不留空格 */
+.img-grid.g5{grid-template-columns:repeat(6,1fr)}
+.img-grid.g5 figure{grid-column:span 2}
+.img-grid.g5 figure:nth-child(4){grid-column:2 / span 2}
+.img-grid.g5 figure:nth-child(5){grid-column:4 / span 2}
+@media(max-width:900px){.img-grid.g5{grid-template-columns:1fr}.img-grid.g5 figure,.img-grid.g5 figure:nth-child(4),.img-grid.g5 figure:nth-child(5){grid-column:auto}}
