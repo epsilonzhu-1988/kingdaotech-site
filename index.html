@@ -8,6 +8,29 @@
 <link rel="canonical" href="https://www.kingdaotech.com/">
 <meta name="keywords" content="wastewater treatment plant design, multi-disc screw press manufacturer, MBR membrane supplier, sludge dewatering equipment China, STP EPC equipment, industrial wastewater treatment">
 <link rel="stylesheet" href="assets/css/style.css">
+
+<script id="oldUrlRedirect">
+/* 老站链接兜底：Google 仍收录 /?about/ 、/?list_21/122.html 这类旧地址，
+   命中旧格式时跳到新站对应页面，避免客户落在首页不知所措。只匹配旧格式，不影响正常参数。*/
+(function () {
+  var q = location.search || '';
+  if (!/^\?(about|contact|products|project|solution|oem|news|list_\d+|products_\d+)/i.test(q)) return;
+  var s = q.toLowerCase(), to = '/products.html';
+  if (/about/.test(s)) to = '/about.html';
+  else if (/contact/.test(s)) to = '/contact.html';
+  else if (/project|case/.test(s)) to = '/projects.html';
+  else if (/solution/.test(s)) to = '/solutions.html';
+  else if (/oem/.test(s)) to = '/oem.html';
+  else if (/list_21|membrane|ultrafil/.test(s)) to = '/products/mbr.html';
+  else if (/list_8|dosing|pac/.test(s)) to = '/products/dosing.html';
+  else if (/list_14|sludge|dewater/.test(s)) to = '/products/screw-press.html';
+  else if (/list_16|list_24|mixer|agitat/.test(s)) to = '/products/mixers.html';
+  else if (/list_17|pump/.test(s)) to = '/products/submersible-pumps.html';
+  else if (/list_19|filler|packing/.test(s)) to = '/products/fillers.html';
+  else if (/list_20|aerator|diffuser/.test(s)) to = '/products/aerators.html';
+  location.replace(to);
+})();
+</script>
 </head>
 <body>
 
