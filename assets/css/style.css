@@ -68,6 +68,9 @@ section{padding:clamp(56px,7vw,88px) 0}
 
 /* projects */
 .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+/* 4 张卡的网格改 2×2，避免 3+1 右下留白 */
+.proj-grid.g4{grid-template-columns:repeat(2,1fr)}
+@media(max-width:900px){.proj-grid.g4{grid-template-columns:1fr}}
 .proj{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;
   display:flex;flex-direction:column;transition:.2s}
 .proj:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(10,37,64,.10)}
