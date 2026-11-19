@@ -372,3 +372,13 @@ html{scroll-behavior:smooth}
 .vidcap{padding:16px 20px 18px;color:#C4D5E3;font-size:13.5px;line-height:1.6}
 .vidcap b{display:block;color:#fff;font-size:14.5px;margin-bottom:5px}
 @media(max-width:900px){.vidwrap{border-radius:10px}}
+
+.vidwrap{position:relative}
+.vidplay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;cursor:pointer;
+  background:linear-gradient(180deg,rgba(10,37,64,.05),rgba(10,37,64,.28));border:0;width:100%;height:100%;padding:0}
+.vidplay i{width:78px;height:78px;border-radius:50%;background:rgba(255,255,255,.94);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.28);transition:.18s}
+.vidplay i::after{content:"";display:block;width:0;height:0;margin-left:6px;border-left:22px solid var(--teal);
+  border-top:14px solid transparent;border-bottom:14px solid transparent}
+.vidplay:hover i{transform:scale(1.08)}
+.vidplay.hide{display:none}

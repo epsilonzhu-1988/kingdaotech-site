@@ -67,10 +67,11 @@
     <h2>35,000 m³/d, and half of it goes back to the mill.</h2>
     <p class="lead">Dyeing effluent is the hard case: colour that survives biological treatment, salinity that kills reuse membranes, and PVA desizing water that will blind an RO element in a shift if it arrives untreated.</p></div>
   <div class="vidwrap" style="margin-bottom:26px">
-    <video controls preload="none" playsinline poster="images/projects/shanquan-3d-poster.jpg">
+    <video id="shanquanVid" controls preload="none" playsinline poster="images/projects/shanquan-3d-poster.jpg">
       <source src="images/projects/shanquan-3d.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+    <button class="vidplay" id="shanquanPlay" aria-label="Play the 3D walkthrough"><i></i></button>
     <div class="vidcap"><b>3D walkthrough of the plant as built.</b> 35,000 m³/d of dyeing effluent, 50% returned to the mill — the animation follows the train from equalisation through biological treatment and membrane separation to the reuse header. Labelled process stages: anaerobic digestion, hydrolysis-acidification, aeration and final clarification.</div>
   </div>
   <div class="proj-photos">
@@ -268,5 +269,13 @@
   WhatsApp
 </a>
 <script src="assets/js/nav.js" defer></script>
+<script>
+(function(){var b=document.getElementById('shanquanPlay'),v=document.getElementById('shanquanVid');
+if(!b||!v)return;
+b.addEventListener('click',function(){b.classList.add('hide');v.play();});
+v.addEventListener('pause',function(){b.classList.remove('hide');});
+v.addEventListener('ended',function(){b.classList.remove('hide');});
+})();
+</script>
 </body>
 </html>
