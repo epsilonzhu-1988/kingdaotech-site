@@ -365,3 +365,10 @@ html{scroll-behavior:smooth}
 .faq .qa{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:14px}
 .faq .qa b{display:block;color:var(--navy);font-size:15.5px;margin-bottom:8px}
 .faq .qa p{margin:0;color:#4E5E6D;line-height:1.65;font-size:15px}
+
+/* 项目三维动画播放器 */
+.vidwrap{background:#0A2540;border-radius:14px;overflow:hidden;margin-top:8px}
+.vidwrap video{width:100%;height:auto;display:block;background:#0A2540}
+.vidcap{padding:16px 20px 18px;color:#C4D5E3;font-size:13.5px;line-height:1.6}
+.vidcap b{display:block;color:#fff;font-size:14.5px;margin-bottom:5px}
+@media(max-width:900px){.vidwrap{border-radius:10px}}
