@@ -355,3 +355,10 @@ html{scroll-behavior:smooth}
 .prod .pimg-sm{width:100%;height:150px;object-fit:contain;background:#fff;border:1px solid var(--line);
   border-radius:9px;margin-bottom:14px;padding:8px;display:block}
 .prod:hover .pimg-sm{border-color:#CFE9E7}
+
+/* GEO：TL;DR 与 FAQ 区块 */
+.tldr{background:#F1F8F8;border-left:4px solid var(--teal);border-radius:10px;padding:20px 24px;color:#2A3B4D;font-size:16px;line-height:1.7}
+.tldr b{color:var(--navy)}
+.faq .qa{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin-bottom:14px}
+.faq .qa b{display:block;color:var(--navy);font-size:15.5px;margin-bottom:8px}
+.faq .qa p{margin:0;color:#4E5E6D;line-height:1.65;font-size:15px}
