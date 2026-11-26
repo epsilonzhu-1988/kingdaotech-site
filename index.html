@@ -14,13 +14,13 @@
    命中旧格式时跳到新站对应页面，避免客户落在首页不知所措。只匹配旧格式，不影响正常参数。*/
 (function () {
   var q = location.search || '';
-  if (!/^\?(about|contact|products|project|solution|oem|news|list_\d+|products_\d+)/i.test(q)) return;
+  if (!/^\?(about|contact|products|project|solution|odm|news|list_\d+|products_\d+)/i.test(q)) return;
   var s = q.toLowerCase(), to = '/products.html';
   if (/about/.test(s)) to = '/about.html';
   else if (/contact/.test(s)) to = '/contact.html';
   else if (/project|case/.test(s)) to = '/projects.html';
   else if (/solution/.test(s)) to = '/solutions.html';
-  else if (/oem/.test(s)) to = '/oem.html';
+  else if (/odm/.test(s)) to = '/odm.html';
   else if (/list_21|membrane|ultrafil/.test(s)) to = '/products/mbr.html';
   else if (/list_8|dosing|pac/.test(s)) to = '/products/dosing.html';
   else if (/list_14|sludge|dewater/.test(s)) to = '/products/screw-press.html';
@@ -35,7 +35,7 @@
 {"@context": "https://schema.org", "@type": "Organization", "name": "KINGDAO TECH", "legalName": "WuXi KingDao Environmental Technology Co.,Ltd", "alternateName": "无锡金岛环境科技有限公司", "url": "https://www.kingdaotech.com/", "logo": "https://www.kingdaotech.com/images/logo.png", "foundingDate": "2006", "description": "Water and wastewater treatment equipment manufacturer and plant designer in Yixing, Jiangsu, China. Screening, sludge dewatering, mixing and aeration, membrane systems, dosing and packaged pumping stations, supplied with process design and commissioning support.", "address": {"@type": "PostalAddress", "streetAddress": "No. 59, Xijiu Avenue, Innovation and Entrepreneurship Park, Environmental Protection Technology Industrial Park, Xinjie Street", "addressLocality": "Yixing", "addressRegion": "Jiangsu", "postalCode": "214200", "addressCountry": "CN"}, "contactPoint": [{"@type": "ContactPoint", "telephone": "+86-15906158868", "contactType": "sales", "email": "zhu.rongtao@kingdaotech.com", "availableLanguage": ["en", "zh"], "areaServed": "Worldwide"}], "knowsAbout": ["wastewater treatment", "sludge dewatering", "bar screens", "membrane bioreactor", "chemical dosing", "aeration", "submersible mixers"]}
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does KINGDAO TECH actually do?", "acceptedAnswer": {"@type": "Answer", "text": "Three things under one roof: process design for water and wastewater plants, manufacture of the equipment inside them, and commissioning support until the plant passes its effluent test. The factory is in Yixing, Jiangsu, China."}}, {"@type": "Question", "name": "Do you work with EPC contractors rather than competing with them?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Most of our work reaches projects through EPC contractors and engineering companies - we manufacture and provide the technical package behind their scope rather than bidding against them for the same contract."}}, {"@type": "Question", "name": "Can you supply equipment for 60 Hz or non-standard voltages?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Motors and electrical components are matched to the destination supply - 50 or 60 Hz, any voltage on request - and every unit ships with English IOM manuals and GA drawings."}}, {"@type": "Question", "name": "Do you offer OEM supply under our brand?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Equipment can be supplied under the customer's own brand with our selection calculations, drawings and start-up support behind it, at factory pricing with stable lead times."}}, {"@type": "Question", "name": "How quickly can you quote a plant?", "acceptedAnswer": {"@type": "Answer", "text": "Send the flow, the effluent analysis and the discharge standard. Selection for standard equipment is usually same or next working day; a full process route with mass balance takes longer because it is designed rather than looked up."}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does KINGDAO TECH actually do?", "acceptedAnswer": {"@type": "Answer", "text": "Three things under one roof: process design for water and wastewater plants, supply of the equipment inside them, and commissioning support until the plant passes its effluent test. We are based in Yixing, Jiangsu, China."}}, {"@type": "Question", "name": "Do you work with EPC contractors rather than competing with them?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Most of our work reaches projects through EPC contractors and engineering companies - we supply the equipment and provide the technical package behind their scope rather than bidding against them for the same contract."}}, {"@type": "Question", "name": "Can you supply equipment for 60 Hz or non-standard voltages?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Motors and electrical components are matched to the destination supply - 50 or 60 Hz, any voltage on request - and every unit ships with English IOM manuals and GA drawings."}}, {"@type": "Question", "name": "Do you offer ODM supply under our brand?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Equipment can be supplied under the customer's own brand with our selection calculations, drawings and start-up support behind it, at competitive pricing with stable lead times."}}, {"@type": "Question", "name": "How quickly can you quote a plant?", "acceptedAnswer": {"@type": "Answer", "text": "Send the flow, the effluent analysis and the discharge standard. Selection for standard equipment is usually same or next working day; a full process route with mass balance takes longer because it is designed rather than looked up."}}]}
 </script>
 </head>
 <body>
@@ -47,7 +47,7 @@
       <a href="products">Products</a>
       <a href="projects">Projects</a>
       <a href="solutions">Solutions</a>
-      <a href="oem">OEM &amp; Partnership</a>
+      <a href="odm">ODM &amp; Partnership</a>
       <a href="about">About</a>
       <a href="contact">Contact</a>
     </nav>
@@ -124,9 +124,9 @@
 <section id="products" class="soft">
   <div class="wrap">
     <div class="sec-head">
-      <div class="eyebrow">What We Manufacture</div>
+      <div class="eyebrow">What We Supply</div>
       <h2>Seventeen equipment lines, supplied and supported by one team.</h2>
-      <p class="lead">Our core lines are built in our own plant in Yixing — screw presses, crushing grilles, dosing systems, screens, mixers and aerators. Across the wider catalogue we supply equipment produced to our drawings and specification, so a project can be sourced from one technical partner instead of five suppliers. Motors and reducers from established international brands throughout; supplied OEM under your own brand or neutral.</p>
+      <p class="lead">Our core lines are engineered in Yixing, Jiangsu — screw presses, crushing grilles, dosing systems, screens, mixers and aerators. Across the wider catalogue we supply equipment produced to our drawings and specification, so a project can be sourced from one technical partner instead of five suppliers. Motors and reducers from established international brands throughout; supplied ODM under your own brand or neutral.</p>
     </div>
     <div class="prod-grid">
       <a class="prod" href="products/screw-press">
@@ -192,22 +192,22 @@
   </div>
 </section>
 
-<!-- ================= OEM ================= -->
-<section id="oem" class="soft">
+<!-- ================= ODM ================= -->
+<section id="odm" class="soft">
   <div class="wrap">
     <div class="band">
       <div>
         <h2>Manufacturing partnership for equipment suppliers and EPCs.</h2>
         <p>Our role is to add capacity behind yours: the equipment you do not build, the process design your team can lean on, and commissioning support at the far end.</p>
         <ul>
-          <li>Supply under your own brand (OEM), factory pricing, stable lead times</li>
+          <li>Supply under your own brand (ODM), competitive pricing, stable lead times</li>
           <li>Process calculations, equipment selection and drawings when a job falls outside your usual range</li>
           <li>Commissioning support until the effluent meets the standard</li>
           <li>Motors and panels to your grid — 380–415 V 50 Hz, 440–480 V 60 Hz, or any voltage and frequency your local standard requires</li>
         </ul>
       </div>
       <div style="text-align:center">
-        <a class="btn btn-primary" href="contact">Discuss an OEM Partnership</a>
+        <a class="btn btn-primary" href="contact">Discuss an ODM Partnership</a>
       </div>
     </div>
   </div>
@@ -221,7 +221,7 @@
       <h2>Four things that decide whether a plant works.</h2>
     </div>
     <div class="why-grid">
-      <div class="why"><b>Factory, not a trader</b><p>Our own plant in Yixing since 2005. You can visit, audit, and see the machine running before it ships.</p></div>
+      <div class="why"><b>Direct supply, not a middleman</b><p>Supplying from Yixing since 2005. You can visit, audit, and see the machine running before it ships.</p></div>
       <div class="why"><b>Design in-house</b><p>10 industries, capacities from 250 to 50,000 m³/d. Mass balance, P&amp;ID and GA drawings come from us, not from a third party.</p></div>
       <div class="why"><b>Commissioning included</b><p>Start-up, sludge seeding, optimisation and operator training until the Ministry of Environment test is passed.</p></div>
       <div class="why"><b>Spares from one source</b><p>Screw shafts, rings, bearings and drive units from the manufacturer that built the machine — not from a reseller.</p></div>
@@ -234,13 +234,13 @@
     <h2>What buyers ask before the first call.</h2></div>
   <div class="faq">
     <div class="qa"><b>What does KINGDAO TECH actually do?</b>
-      <p>Three things under one roof: process design for water and wastewater plants, manufacture of the equipment inside them, and commissioning support until the plant passes its effluent test. The factory is in Yixing, Jiangsu, China.</p></div>
+      <p>Three things under one roof: process design for water and wastewater plants, supply of the equipment inside them, and commissioning support until the plant passes its effluent test. We are based in Yixing, Jiangsu, China.</p></div>
     <div class="qa"><b>Do you work with EPC contractors rather than competing with them?</b>
-      <p>Yes. Most of our work reaches projects through EPC contractors and engineering companies - we manufacture and provide the technical package behind their scope rather than bidding against them for the same contract.</p></div>
+      <p>Yes. Most of our work reaches projects through EPC contractors and engineering companies - we supply the equipment and provide the technical package behind their scope rather than bidding against them for the same contract.</p></div>
     <div class="qa"><b>Can you supply equipment for 60 Hz or non-standard voltages?</b>
       <p>Yes. Motors and electrical components are matched to the destination supply - 50 or 60 Hz, any voltage on request - and every unit ships with English IOM manuals and GA drawings.</p></div>
-    <div class="qa"><b>Do you offer OEM supply under our brand?</b>
-      <p>Yes. Equipment can be supplied under the customer's own brand with our selection calculations, drawings and start-up support behind it, at factory pricing with stable lead times.</p></div>
+    <div class="qa"><b>Do you offer ODM supply under our brand?</b>
+      <p>Yes. Equipment can be supplied under the customer's own brand with our selection calculations, drawings and start-up support behind it, at competitive pricing with stable lead times.</p></div>
     <div class="qa"><b>How quickly can you quote a plant?</b>
       <p>Send the flow, the effluent analysis and the discharge standard. Selection for standard equipment is usually same or next working day; a full process route with mass balance takes longer because it is designed rather than looked up.</p></div>
   </div>
@@ -272,7 +272,7 @@
           <option>Process design / technical proposal</option>
           <option>Equipment quotation (single machine)</option>
           <option>Complete plant package</option>
-          <option>OEM / manufacturing partnership</option>
+          <option>ODM / manufacturing partnership</option>
           <option>Spare parts</option>
         </select>
       </div>
@@ -293,7 +293,7 @@
       <div><b>Products</b><ul><li><a href="products/screw-press">Screw Press</a></li><li><a href="products/mbr">MBR Membrane</a></li><li><a href="products/dosing">Dosing Systems</a></li><li><a href="products/mechanical-bar-screen">Bar Screens</a></li><li><a href="products/submersible-pumps">Pumps &amp; Mixers</a></li></ul></div>
       <div><b>Solutions</b><ul><li><a href="projects#textile">Dyeing &amp; Textile</a></li><li><a href="projects#tannery">Tannery</a></li><li><a href="projects#pcb">PCB &amp; Electronics</a></li><li><a href="projects#reuse">Water Reuse</a></li><li><a href="projects#municipal">Municipal</a></li></ul></div>
       <div><b>Company</b><ul>
-        <li><a href="projects">Projects</a></li><li><a href="oem">OEM Partnership</a></li><li><a href="contact">Contact</a></li>
+        <li><a href="projects">Projects</a></li><li><a href="odm">ODM Partnership</a></li><li><a href="contact">Contact</a></li>
       </ul></div>
     </div>
     <div class="f-bottom">

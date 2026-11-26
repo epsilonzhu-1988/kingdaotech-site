@@ -25,7 +25,7 @@
 ## Services
 
 - Process design and technical consulting: mass balance, equipment selection, GA drawings, commissioning support.
-- OEM supply under the customer's own brand, at factory pricing with stable lead times.
+- ODM supply under the customer's own brand, at competitive pricing with stable lead times.
 - Motors and electrical components to the destination voltage and frequency (50 or 60 Hz, any voltage on request), with English IOM manuals.
 
 ## References
@@ -36,7 +36,7 @@
 ## Company
 
 - [About](https://www.kingdaotech.com/about): founded 2006, factory in Yixing, Jiangsu, China.
-- [OEM and partnership](https://www.kingdaotech.com/oem): supply under customer brand.
+- [ODM and partnership](https://www.kingdaotech.com/odm): supply under customer brand.
 
 ## Contact
 
